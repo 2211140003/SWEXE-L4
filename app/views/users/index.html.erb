@@ -1,0 +1,13 @@
+<h1>ユーザー一覧</h1>
+<table>
+  <tr>
+    <th>ユーザーID</th>
+    <th>パスワード</th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.uid %></td>
+      <td><%= user.pass %></td>
+    </tr>
+  <% end %>
+</table>
