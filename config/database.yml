@@ -25,4 +25,8 @@ production:
   addpter: postgresql
   encoding: unicode
   pool: 5
+  database: render_dgeg
+　username: render_dgeg_user
+　password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
+　url: <%= ENV['DATABASE_URL'] %>
   #  database: db/production.sqlite3
